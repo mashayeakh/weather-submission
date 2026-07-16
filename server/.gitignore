@@ -1,0 +1,12 @@
+node_modules
+.env
+.env.*
+dist
+out
+.vercel
+
+# Prisma
+/generated/prisma
+
+# Next.js cache
+.next
