@@ -1,4 +1,4 @@
-# WeatherScope 🌤️
+# Weather 🌤️
 
 **🚀 Live Demo (Client):** [https://weathersubmission.netlify.app](https://weathersubmission.netlify.app)
 **⚙️ Live API (Server):** [https://weather-submission.onrender.com/health](https://weather-submission.onrender.com/health)
@@ -25,8 +25,8 @@ Displays real-time current conditions, a 3-day forecast, wind speed/direction, a
 ## Architecture
 
 ```
-weatherscope-client/   ← Next.js 14 (App Router) frontend
-weatherscope-server/   ← Express.js API proxy + data normalizer
+client/   ← Next.js 14 (App Router) frontend
+server/   ← Express.js API proxy + data normalizer
 ```
 
 The server acts as a secure proxy: it holds the WeatherAI API key server-side and normalizes the API response into a clean shape the client consumes. This avoids exposing the API key in the browser.
