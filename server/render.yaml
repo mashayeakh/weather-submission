@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: weatherscope-server
+    env: node
+    rootDir: server
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: WEATHER_AI_KEY
+        sync: false # The user will need to input this in the Render dashboard
