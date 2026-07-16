@@ -1,5 +1,7 @@
 # WeatherScope Server
 
+**⚙️ Live API:** [https://weather-submission.onrender.com/health](https://weather-submission.onrender.com/health)
+
 Express + TypeScript API that proxies the WeatherAI API. Keeps the WeatherAI API key server-side and exposes clean, scoped endpoints for the WeatherScope client.
 
 ## Setup

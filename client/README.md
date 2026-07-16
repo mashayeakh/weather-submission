@@ -1,5 +1,8 @@
 # WeatherScope 🌤️
 
+**🚀 Live Demo (Client):** [https://weathersubmission.netlify.app](https://weathersubmission.netlify.app)
+**⚙️ Live API (Server):** [https://weather-submission.onrender.com/health](https://weather-submission.onrender.com/health)
+
 A live, multi-city weather dashboard built on the [WeatherAI API](https://weather-ai.co/docs).
 Displays real-time current conditions, a 3-day forecast, wind speed/direction, and API usage quota — all in a modern glassmorphism dark-mode UI.
 
@@ -42,7 +45,7 @@ The server acts as a secure proxy: it holds the WeatherAI API key server-side an
 ### 1. Server
 
 ```bash
-cd weatherscope-server/weatherscope-server
+cd server
 npm install
 ```
 
@@ -68,7 +71,7 @@ The server runs at `http://localhost:5000`.
 ### 2. Client
 
 ```bash
-cd weatherscope-client/weatherscope-client
+cd client
 npm install
 ```
 
@@ -117,9 +120,9 @@ The client runs at `http://localhost:3000`.
 
 ## Deployment
 
-**Server** → Deploy to [Render](https://render.com) or [Railway](https://railway.app). Set environment variables via the platform dashboard.
+**Server** → Deploy to [Render](https://render.com) using the provided `render.yaml` Blueprint. Set environment variables via the platform dashboard.
 
-**Client** → Deploy to [Vercel](https://vercel.com). Set `NEXT_PUBLIC_API_BASE_URL` to your deployed server URL.
+**Client** → Deploy to [Netlify](https://netlify.com) using the provided `netlify.toml`. Set `NEXT_PUBLIC_API_BASE_URL` to your deployed server URL.
 
 ---
 
