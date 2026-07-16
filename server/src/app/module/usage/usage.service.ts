@@ -1,5 +1,3 @@
-// ─── Public service function ──────────────────────────────────────────────────
-
 export async function fetchUsage() {
   const baseUrl = process.env.WEATHER_AI_BASE_URL || "https://api.weather-ai.co";
   const apiKey = process.env.WEATHER_AI_KEY || "";
@@ -20,8 +18,6 @@ export async function fetchUsage() {
 
   const data = await response.json();
 
-  // Normalize: real API returns { plan, used, limit, remaining, unlimited }
-  // Expose both the original shape and aliased fields the client expects
   return {
     plan: data.plan ?? "free",
     requests_used: data.used ?? data.requests_used ?? 0,

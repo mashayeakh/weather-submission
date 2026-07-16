@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { fetchUsage } from "../services/usage.service";
+import { fetchUsage } from "./usage.service";
 
 // GET /api/usage
 export async function getUsage(_req: Request, res: Response): Promise<void> {

@@ -1,7 +1,8 @@
 import { Request, Response } from "express";
-import { CITIES } from "../cities";
-import { ApiErrorShape } from "../types";
-import { fetchWeather } from "../services/weather.service";
+import { CITIES } from "../../../cities";
+import { ApiErrorShape } from "../../../types";
+import { fetchWeather } from "./weather.service";
+
 
 // GET /api/cities
 export async function getCities(_req: Request, res: Response): Promise<void> {

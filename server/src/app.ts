@@ -1,7 +1,7 @@
 import express, { Application, Request, Response } from "express";
 import cors from "cors";
-import weatherRoutes from "./routes/weather.routes";
-import usageRoutes from "./routes/usage.routes";
+import weatherRoutes from "./app/module/weather/weather.routes";
+import usageRoutes from "./app/module/usage/usage.routes";
 
 export function createApp(): Application {
   const app = express();

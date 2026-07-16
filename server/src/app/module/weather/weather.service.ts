@@ -1,6 +1,8 @@
-import { ApiErrorShape, WeatherAiError } from "../types";
 
-// ─── Lookup tables ────────────────────────────────────────────────────────────
+
+// ─── Lookup tables 
+
+import { ApiErrorShape, WeatherAiError } from "../../../types";
 
 export const WEATHER_CODE_LABELS: Record<number, string> = {
   0: "Clear sky",

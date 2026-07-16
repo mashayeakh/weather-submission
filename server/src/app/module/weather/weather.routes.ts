@@ -1,5 +1,6 @@
 import { Router } from "express";
-import { getCities, getCityWeather, getAllWeather } from "../controllers/weather.controller";
+import { getAllWeather, getCities, getCityWeather } from "./weather.controller";
+
 
 const router = Router();
 
