@@ -1,4 +1,4 @@
-# WeatherScope 🌤️
+# Weather 🌤️
 
 **🚀 Live Demo (Client):** [https://weathersubmission.netlify.app](https://weathersubmission.netlify.app)
 **⚙️ Live API (Server):** [https://weather-submission.onrender.com/health](https://weather-submission.onrender.com/health)

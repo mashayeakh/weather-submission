@@ -1,4 +1,4 @@
-# WeatherScope Server
+# Weather Server
 
 **⚙️ Live API:** [https://weather-submission.onrender.com/health](https://weather-submission.onrender.com/health)
 
