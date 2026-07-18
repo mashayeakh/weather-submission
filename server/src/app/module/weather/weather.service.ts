@@ -143,7 +143,6 @@ export async function fetchWeather(lat: number, lon: number, days = 3) {
     throw err;
   }
 
-  // ai=false preserves AI quota on the free plan
   const url = `${baseUrl}/v1/weather?lat=${lat}&lon=${lon}&days=${days}&ai=false`;
   const response = await fetch(url, {
     headers: { Authorization: `Bearer ${apiKey}` },

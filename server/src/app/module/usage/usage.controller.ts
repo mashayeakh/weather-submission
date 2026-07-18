@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import { fetchUsage } from "./usage.service";
 
-// GET /api/usage
 export async function getUsage(_req: Request, res: Response): Promise<void> {
   if (!process.env.WEATHER_AI_KEY) {
     res.status(500).json({ code: "MISSING_API_KEY", message: "Weather AI API key is not configured" });
